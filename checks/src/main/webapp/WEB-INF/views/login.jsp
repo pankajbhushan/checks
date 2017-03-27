@@ -2,8 +2,11 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+<head>
+	<link rel="stylesheet" href="../../resources/css/main.css">
+</head>
 <body>
-	<form action="login">
+	<form action="/checks/login" method="post">
 		<table>
 			<tr>
 				<td> Enter Email id: </td>
@@ -15,7 +18,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" name="Log In"></td>
+				<td><input type="submit" value="Log In"></td>
 			</tr>
 		</table>
 	</form>
@@ -37,7 +40,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" name="Register"></td>
+				<td><input type="submit" value="Register"></td>
 			</tr>
 		</table>
 	</form>
