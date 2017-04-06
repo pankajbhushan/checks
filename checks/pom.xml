@@ -10,10 +10,11 @@
   
   <!-- Shared version number properties -->
   <properties>
-		<org.springframework.version>4.3.7.RELEASE</org.springframework.version>  	
+		<org.springframework.version>4.3.7.RELEASE</org.springframework.version>
+		<org.springframework.security.version>3.2.3.RELEASE</org.springframework.security.version>  	
   </properties>
   
-  <dependencies>
+  <dependencies>	
   	
     <dependency>
       <groupId>junit</groupId>
@@ -82,6 +83,50 @@
     	<artifactId>spring-orm</artifactId>
     	<version>${org.springframework.version}</version>
     </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-jdbc</artifactId>
+    	<version>${org.springframework.version}</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework.security</groupId>
+    	<artifactId>spring-security-core</artifactId>
+    	<version>${org.springframework.security.version}</version>
+    </dependency>
+    <dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-web</artifactId>
+    <version>${org.springframework.security.version}</version>
+</dependency>
+    <dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-config</artifactId>
+    <version>${org.springframework.security.version}</version>
+    <scope>runtime</scope>
+</dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+	<dependency>
+	    <groupId>commons-dbcp</groupId>
+	    <artifactId>commons-dbcp</artifactId>
+	    <version>1.4</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.6</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>5.1.0.Final</version>
+	</dependency>
+	
+    
+    
   </dependencies>
   <build>
    <pluginManagement>

@@ -9,8 +9,8 @@
 	<form action="/checks/login" method="post">
 		<table>
 			<tr>
-				<td> Enter Email id: </td>
-				<td><input type="email" name="email" placeholder="enter email"></td>
+				<td> Enter Username: </td>
+				<td><input type="text" name="username" placeholder="enter Username"></td>
 			</tr>
 			<tr>
 				<td> Enter Password </td>

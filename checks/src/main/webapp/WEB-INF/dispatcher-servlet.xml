@@ -10,7 +10,7 @@
 
 	<mvc:annotation-driven />
 
-	<context:component-scan base-package="org.ailsonvoel.checks.controller" />
+	<context:component-scan base-package="org.ailsonvoel.checks.controller"/>
 
 
 	<bean id="viewResolver"
