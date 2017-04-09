@@ -2,15 +2,10 @@
 
 <h1>Welcome User!</h1>
 
+<h2>
 
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
-<h1>Welcome User!</h1>
+<a href=<c:url value="logout"></c:url>>logout</a></h2>
+
+
+
 <%@ include file="commons/footer.jspf" %>

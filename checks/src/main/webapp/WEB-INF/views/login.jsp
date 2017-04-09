@@ -6,15 +6,15 @@
 	<link rel="stylesheet" href="../../resources/css/main.css">
 </head>
 <body>
-	<form action="/checks/login" method="post">
+	<form action="j_spring_security_check" method="post">
 		<table>
 			<tr>
 				<td> Enter Username: </td>
-				<td><input type="text" name="username" placeholder="enter Username"></td>
+				<td><input id="username" type="text" name="username" placeholder="enter Username"></td>
 			</tr>
 			<tr>
 				<td> Enter Password </td>
-				<td><input type="password" name="password" placeholder="enter password"></td>		
+				<td><input id="password" type="password" name="password" placeholder="enter password"></td>		
 			</tr>
 			<tr>
 				<td></td>
