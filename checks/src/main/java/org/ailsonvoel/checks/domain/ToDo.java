@@ -1,4 +1,4 @@
-package org.ailsonvoel.checks.model;
+package org.ailsonvoel.checks.domain;
 
 
 
