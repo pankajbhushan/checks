@@ -1,0 +1,32 @@
+.jumbotron{
+	padding-top: 1em;
+	padding-bottom: 4em; 
+	background-color: #F5F5F5;
+	color:#000000;
+	margin-bottom:0px;
+}
+
+.avatar{
+	border-radius: 100%;
+	width:12%;
+	position:absolute;
+	top:160px;
+	right:44%;
+	border:3px solid #73AD21;
+	z-index:1;
+}
+
+.centerhead{
+	margin:auto;
+	text-align:center;
+}
+
+.container-body{
+	padding-top:7em;
+	background-color:#d34039;
+	margin: 0px 0px 0px 0px;
+	padding-right:50px;
+	padding-left:50px;
+	color:white;
+}
+

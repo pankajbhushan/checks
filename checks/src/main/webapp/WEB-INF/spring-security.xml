@@ -14,8 +14,8 @@
 		<intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
 		<form-login login-page="/login" default-target-url="/home"
 			always-use-default-target="true" username-parameter="username"
-			password-parameter="password" authentication-failure-url="/login?error"/>
-		<logout logout-url="/logout" logout-success-url="/login?logout" delete-cookies="JSESSIONID" />
+			password-parameter="password" authentication-failure-url="/login?error=true"/>
+		<logout logout-url="/login?logout=true" delete-cookies="JSESSIONID" />
 	</http>
 
 	<authentication-manager>

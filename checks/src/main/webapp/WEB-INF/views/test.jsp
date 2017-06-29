@@ -9,13 +9,14 @@
 </head>
 <body>
 	
+	<label class="jumbotron text-center">Enter UserName : </label>
 	<c:set var="contextpath" value="${pageContext.request.contextPath}"></c:set>
 	<form method="post" action="${contextpath}/login/finduser">
 		<input id="username" type="text" name="username" /><br/>
-		<input type="submit" value="Find User"/>
+		<input class="button" type="submit" value="Find User"/>
 	</form>
 	
 	Test Result : <c:out value="${result}"></c:out>
-
+	
 </body>
 </html>

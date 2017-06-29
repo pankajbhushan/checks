@@ -5,11 +5,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../../resources/css/main.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="todo application">
+<meta name="author" content="Pankaj Bhushan">
+<link type="text/css" rel="stylesheet"
+	href="/resources/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet"
+	href="/resources/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 </head>
 <body style="background-color: grey">
 
 	<c:set var="context" value="${pageContext.request.contextPath}" />
+	<%-- <c:if test="${logout ne null}">
+		<div class="success">
+			<c:out value="Logged out successfully"></c:out>
+		</div>
+	</c:if> --%>
+	<c:if test="${param.logout != null}">
+		<div class="alert alert-success">You have been logged out.</div>
+	</c:if>
+
+	<c:if test="${error ne null}">
+		<div class="failure">
+			<c:out value="Invalid Credentials supplied."></c:out>
+		</div>
+	</c:if>
+
 	<form:form action="j_spring_security_check" method="post">
 		<table>
 			<tr>
@@ -29,9 +54,15 @@
 		</table>
 	</form:form>
 
+
+
+	<c:if test="${registerMessage ne null}">
+		<div class="success">
+			<c:out value="${registerMessage}"></c:out>
+		</div>
+	</c:if>
 	<h3>Register below to create a new account:</h3>
 	<form action="${context}/login/register" method="post">
-		<c:out value="${registerMessage}"></c:out>
 		<table>
 			<tr>
 				<td><input type="text" name="firstName"
@@ -54,12 +85,6 @@
 			</tr>
 		</table>
 	</form>
-	<form method="post" action="${context}/login/finduser">
-		<input id="fusername" type="text" name="fusername" /><br/>
-		<input type="submit" value="Find User"/>
-	</form>
-	
-	Test Result : <c:out value="${result}"></c:out>
 
 </body>
 </html>

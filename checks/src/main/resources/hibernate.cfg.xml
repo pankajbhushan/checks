@@ -13,7 +13,7 @@
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
 		<!-- Enable Hibernate's automatic session context management -->
-		<!-- <property name="current_session_context_class">thread</property> -->
+		<property name="current_session_context_class">thread</property>
 
 		<!-- Disable the second-level cache -->
 		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
@@ -23,5 +23,9 @@
 
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<mapping class="org.ailsonvoel.checks.domain.User"/>
+		<mapping class="org.ailsonvoel.checks.domain.Authorities"/>
+<!-- 		<mapping class="org.ailsonvoel.checks.domain.ToDo"/> -->
+<!-- 		<mapping class="org.ailsonvoel.checks.domain.UserDetail"/> -->
+<!-- 		<mapping class="org.ailsonvoel.checks.domain.TodoList"/> -->
 	</session-factory>
 </hibernate-configuration>
