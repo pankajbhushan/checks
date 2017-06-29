@@ -24,8 +24,8 @@
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		<mapping class="org.ailsonvoel.checks.domain.User"/>
 		<mapping class="org.ailsonvoel.checks.domain.Authorities"/>
-<!-- 		<mapping class="org.ailsonvoel.checks.domain.ToDo"/> -->
-<!-- 		<mapping class="org.ailsonvoel.checks.domain.UserDetail"/> -->
-<!-- 		<mapping class="org.ailsonvoel.checks.domain.TodoList"/> -->
+		<mapping class="org.ailsonvoel.checks.domain.ToDo"/>
+		<mapping class="org.ailsonvoel.checks.domain.UserDetail"/>
+		<mapping class="org.ailsonvoel.checks.domain.TodoList"/>
 	</session-factory>
 </hibernate-configuration>
